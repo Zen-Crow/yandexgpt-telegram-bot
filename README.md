@@ -4,10 +4,10 @@
 
 
 ## Технологии
-Yandex Cloud
-Serverless Functions
-Terraform
-Python
+  - Yandex Cloud
+  - Serverless Functions
+  - Terraform
+  - Python
 
 ## Установка
 
@@ -19,7 +19,7 @@ Python
 
 ## Установите переменные окружения.
 
-В переменной $TELEGRAM_BOT_TOKEN установите токен бота которого вы создали.
+ - В переменной $TELEGRAM_BOT_TOKEN установите токен бота которого вы создали.
 
 ### команда powershell:
 
@@ -41,13 +41,13 @@ Python
 
 ## Последний шаг установка webHook'a
 
-после завершения команды terraform apply вы получите команду:
+ - после завершения команды terraform apply вы получите команду:
 
-setWebhook = "https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/setWebhook?url=https://functions.yandexcloud.net/{CLOUD_FUNCTION_ID}"
+    setWebhook = "https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/setWebhook?url=https://functions.yandexcloud.net/{CLOUD_FUNCTION_ID}"
 
-Подружите ее с браузером или если вам нравится работать в терминале:
+ - Подружите ее с браузером или если вам нравится работать в терминале:
 
-curl -X POST https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/setWebhook?url=https://functions.yandexcloud.net/{CLOUD_FUNCTION_ID}
+    curl -X POST https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/setWebhook?url=https://functions.yandexcloud.net/{CLOUD_FUNCTION_ID}
 
 
 ## Удаление ресурсов 
@@ -56,7 +56,7 @@ curl -X POST https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/setWebhoo
 
 ## Удаление webHook'a
 
-curl -X POST https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/deleteWebhook?url=https://functions.yandexcloud.net/{CLOUD_FUNCTION_ID}
+    curl -X POST https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/deleteWebhook?url=https://functions.yandexcloud.net/{CLOUD_FUNCTION_ID}
 
 
 # Happy Coding!!!
