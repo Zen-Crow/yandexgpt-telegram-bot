@@ -17,7 +17,7 @@ git clone https://github.com/Zen-Crow/yandexgpt-telegram-bot.git
 
 cd yandex-cloud-bot-with-terraform/dev
 
-Установите переменные окружения из фала yc_set_env.ps1 для своей операционной системы.
+Установите переменные окружения из фала yc_set_env.ps1.
 
 команда в powershell:
 
