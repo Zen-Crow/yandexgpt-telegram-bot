@@ -11,11 +11,11 @@ Python
 
 ## Установка
 
-Клонируйте репозиторий:
+### Клонируйте репозиторий:
 
-git clone https://github.com/Zen-Crow/yandexgpt-telegram-bot.git
+    git clone https://github.com/Zen-Crow/yandexgpt-telegram-bot.git
 
-cd yandex-cloud-bot-with-terraform/dev
+    cd yandex-cloud-bot-with-terraform/dev
 
 ## Установите переменные окружения.
 
@@ -32,11 +32,11 @@ cd yandex-cloud-bot-with-terraform/dev
 
 ## Запуск проекта
 
-Инициализируйте Terraform:            terraform init
+    Инициализируйте Terraform:            terraform init
 
-Проверьте план развертывания:         terraform plan
+    Проверьте план развертывания:         terraform plan
 
-Примените конфигурацию Terraform:     terraform apply
+    Примените конфигурацию Terraform:     terraform apply
 
 
 ## Последний шаг установка webHook'a
@@ -52,7 +52,7 @@ curl -X POST https://api.telegram.org/bot{ТЕЛЕГРАМ_ТОКЕН}/setWebhoo
 
 ## Удаление ресурсов 
 
-terraform destroy
+    terraform destroy
 
 ## Удаление webHook'a
 
