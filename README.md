@@ -32,11 +32,11 @@ cd yandex-cloud-bot-with-terraform/dev
 
 ## Запуск проекта
 
-    Инициализируйте Terraform:            terraform init
+Инициализируйте Terraform:            terraform init
 
-    Проверьте план развертывания:         terraform plan
+Проверьте план развертывания:         terraform plan
 
-    Примените конфигурацию Terraform:     terraform apply
+Примените конфигурацию Terraform:     terraform apply
 
 
 ## Последний шаг установка webHook'a
