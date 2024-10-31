@@ -1,13 +1,11 @@
 ### Data source
 data "yandex_client_config" "client" {}
 
-
 ### Service account
 resource "yandex_iam_service_account" "sa" {
   name        = "sa-yandexgpt"
   description = "service account for AI language models"
 }
-
 
 ### API key
 resource "yandex_iam_service_account_api_key" "api-key" {
@@ -15,14 +13,12 @@ resource "yandex_iam_service_account_api_key" "api-key" {
   description        = "API-key for AI language models"
 }
 
-
 ### Role for MML
 resource "yandex_resourcemanager_folder_iam_member" "languageModels_user" {
   folder_id = var.folder_id
   role      = "ai.languageModels.user"
   member    = "serviceAccount:${yandex_iam_service_account.sa.id}"
 }
-
 
 ### Role for serverless and public function mode
 resource "yandex_function_iam_binding" "iam" {
@@ -32,7 +28,6 @@ resource "yandex_function_iam_binding" "iam" {
     "system:allUsers",
   ]
 }
-
 
 ### Serverless function for
 resource "yandex_function" "serverless" {
